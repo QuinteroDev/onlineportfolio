@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QuinteroDev Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+  <!-- Navegación -->
+<!-- Navegación -->
+<nav>
+  <ul class="nav-links">
+    <li><a href="#home">Inicio</a></li>
+    <li><a href="#projects">Proyectos</a></li>
+    <li><a href="#contact">Contacto</a></li>
+  </ul>
+  <ul class="social-icons">
+    <li>
+      <a href="https://www.linkedin.com/in/quinterodev" target="_blank">
+        <img src="linkedin.png" alt="LinkedIn">
+      </a>
+    </li>
+    <li>
+      <a href="https://github.com/quinterodev" target="_blank">
+        <img src="github.png" alt="GitHub">
+      </a>
+    </li>
+  </ul>
+</nav>
+
+  <!-- Sección de Presentación (Hero Section) -->
+  <section id="home" class="hero">
+    <div class="content">
+      <h1>Iván Quintero</h1>
+      <p>Bienvenido a mi espacio en la web! <br><br>
+        
+        Soy un desarrollador full stack con una pasión por convertir ideas en productos funcionales y escalables. Con experiencia en frontend y backend, me especializo en crear aplicaciones web dinámicas, eficientes y adaptadas a las necesidades de cada proyecto.<br><br>
+
+        A lo largo de mi carrera, he trabajado en una amplia gama de tecnologías y proyectos, desde análisis de datos hasta el desarrollo de interfaces modernas y potentes. Me encanta resolver problemas complejos con soluciones sencillas y elegantes, siempre manteniendo el enfoque en la experiencia del usuario.
+        
+        Cuando no estoy escribiendo código, disfruto de explorar nuevas tendencias tecnológicas, trabajar en proyectos creativos y estar en contacto con la naturaleza.<br><br>
+        
+        ¿Listo para crear algo increíble juntos? </p>
+      <button class="cta-button">Comenzar</button>
+      <h2>He trabajado</h2>
+    </div>
+    <div class="profile-picture">
+      <img src="quintero.jpeg" alt="Quintero Profile">
+    </div>
+  </section>
+    <!-- Sección de WorkedWith -->
+
+<section id="workedwith" class="workedwith">
+  <div class="container">
+  <div class="company-logos">
+    <img src="Johnson.png" alt="Johnson Logo">
+    <img src="AF.png" alt="AF Logo">
+    <img src="Kenvue.png" alt="Kenvue Logo">
+    <img src="delta.png" alt="Delta Logo">
+  </div>
+</div>
+</section>
+
+<!-- Sección de Projects -->
+<!-- Sección de Proyectos -->
+<section id="projects" class="projects">
+  <div class="container">
+    <h2>Mis Proyectos</h2>
+    
+    <!-- Proyecto 1: Codmentor -->
+    <div class="project-card">
+      <h3>Project 1: Codmentor</h3>
+      <p>
+        <strong>Descripción:</strong> CodMentor es una plataforma educativa innovadora diseñada para mejorar las habilidades de programación, proporcionando ejercicios dinámicos generados mediante la API de OpenAI. Los usuarios pueden escribir y ejecutar código en tiempo real en un editor interactivo, con soporte para múltiples lenguajes de programación. El proyecto fue desplegado con Gunicorn y Nginx, y cuenta con HTTPS seguro gracias a Let's Encrypt.
+      </p>
+      <div class="project-links">
+        <a href="https://codmentor.quinterodev.com/codmentor/" class="btn-live">Live Application</a>
+        <a href="https://github.com/QuinteroDev/codmentor" class="btn-github">Repositorio GitHub</a>
+      </div>
+    </div>
+
+    <!-- Proyecto 2: KakeboAPP -->
+    <div class="project-card">
+      <h3>Project 2: KakeboAPP</h3>
+      <p>
+        <strong>Descripción:</strong> KakeboAPP es una herramienta integral de gestión financiera personal basada en el método tradicional japonés Kakeibo. Ayuda a los usuarios a rastrear ingresos y gastos, establecer metas financieras y analizar patrones de gasto. Desarrollada con Django, fue desplegada en DigitalOcean usando Nginx y Gunicorn, con HTTPS seguro a través de Let's Encrypt.
+      </p>
+      <div class="project-links">
+        <a href="https://quinterodev.com/kakeboapp/" class="btn-live">Live Application</a>
+        <a href="https://github.com/QuinteroDev/KakeboAPP_public" class="btn-github">Repositorio GitHub</a>
+      </div>
+    </div>
+
+    <!-- Proyecto 3: VS Code DJTemplates-Autocomplete -->
+    <div class="project-card">
+      <h3>Project 3: VS Code DJTemplates-Autocomplete</h3>
+      <p>
+        <strong>Descripción:</strong> DJTemplates-Autocomplete es una extensión de Visual Studio Code que mejora la eficiencia al trabajar con plantillas de Django, proporcionando autocompletado para etiquetas y filtros comunes. Desarrollada en TypeScript, esta extensión está disponible en el Marketplace de VSCode y ha sido probada para garantizar la compatibilidad con las últimas versiones de VSCode.
+      </p>
+      <div class="project-links">
+        <a href="https://marketplace.visualstudio.com/items?itemName=quinterodev.djtemplates-autocomplete" class="btn-live">VSCode Marketplace</a>
+        <a href="https://github.com/QuinteroDev/djtemplates-autocomplete" class="btn-github">Repositorio GitHub</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Sección de Contacto -->
+<!-- Sección de Contacto -->
+<section id="contact" class="contact">
+  <div class="contact-content">
+    <h2>Contacto</h2>
+    <p>¿Tienes alguna pregunta o estás interesado en trabajar juntos? No dudes en enviarme un mensaje, estaré encantado de ayudarte. </p>
+    <form action="mailto:info@quintero.cz" method="post" enctype="text/plain" class="contact-form">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Por favor ingresa tu email" required>
+    
+      <label for="mobile">Móvil</label>
+      <input type="tel" id="mobile" name="mobile" placeholder="Ingresa tu número de móvil (Opcional)">
+    
+      <label for="message">Mensaje</label>
+      <textarea id="message" name="message" placeholder="Escribe tu mensaje aquí" rows="5" required></textarea>
+    
+      <button type="submit" class="cta-button">Enviar</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <p>&copy; 2024 Iván Quintero. Todos los derechos reservados.</p>
+</footer>
+</div>
+</body>
+</html>

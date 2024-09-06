@@ -1,0 +1,351 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  
+  /* NavegaciÃ³n */
+  .container {
+    width: 1200px;
+  }
+  
+  /* Contenedor de navegaciÃ³n */
+  nav {
+  background-color: #1B1B1B;
+  border-radius: 0px 0px 8px 8px;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  }
+  
+  /* AlineaciÃ³n de los enlaces de navegaciÃ³n */
+  .nav-links {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  flex-grow: 1; 
+  }
+  
+  .nav-links li {
+  margin: 0;
+  }
+  
+  .nav-links li a {
+  color: #9C9C9C;
+  font-size: 14px;
+  text-decoration: none;
+  }
+  
+  .nav-links li a:hover {
+  text-decoration: underline;
+  }
+  
+  /* Iconos de redes sociales alineados a la derecha */
+  .social-icons {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  gap: 20px;
+  }
+  
+  .social-icons li {
+  margin: 0;
+  }
+  
+  .social-icons a {
+  display: inline-block;
+  }
+  
+  .social-icons img {
+  width: 34px;
+  height: 34px;
+  }
+  
+  /* Hero Section */
+  .hero {
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  padding: 10px;
+  min-height: 50vh; 
+  gap: 40px; 
+  }
+  
+  .hero .content {
+  flex-grow: 1;
+  max-width: 500px; 
+  color: white;
+  }
+  
+  .hero h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 44px;
+  font-weight: 800;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  color: white;
+  }
+  
+  .hero p {
+  color: #9C9C9C;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.14px;
+  }
+  
+  .cta-button {
+  border-radius: 4px;
+  border: 1px solid #62BA1B;
+  background: #3F8E00;
+  box-shadow: 0px 8px 30px 0px rgba(63, 142, 0, 0.50);
+  color: white;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  }
+  
+  .cta-button:hover {
+  background-color: #218838;
+  }
+  
+  .profile-picture {
+  flex-grow: 0; 
+  max-width: 400px; 
+  flex-shrink: 0; 
+  margin-left: 100px;
+  }
+  
+  .profile-picture img {
+  border-radius: 50%;
+  width: 100%; 
+  height: auto;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+  }
+  
+  /* SecciÃ³n de Proyectos */
+  .projects {
+  background-color: #fff; 
+  padding: 30px 0; 
+  display: flex;
+  justify-content: center; 
+  width: 100vw; 
+  margin-left: calc(50% - 50vw); 
+  }
+  
+  .project-wrapper {
+  max-width: 1200px;
+  width: 100%; 
+  padding: 0 20px; 
+  }
+  
+  .projects h2 {
+  color: #080808;
+  font-family: 'Raleway', sans-serif;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;;
+  margin-bottom: 30px;
+  text-align: center; 
+  }
+  
+  .project-card {
+  background-color: #f4f4f4;
+  padding: 20px;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .project-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #333;
+  }
+  
+  .project-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+  }
+  
+  .project-links {
+  margin-top: 20px;
+  text-align: center; 
+  }
+  
+  .project-links a {
+  display: inline-block;
+  margin-right: 15px;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  }
+  
+  .project-links .btn-live {
+  background-color: #007bff;
+  color: white;
+  }
+  
+  .project-links .btn-github {
+  background-color: #28a745;
+  color: white;
+  }
+  
+  .project-links a:hover {
+  opacity: 0.8;
+  }
+  /* SecciÃ³n de Worked With */
+  .workedwith {
+  padding: 20px;
+  text-align: left;
+  }
+  
+  .content h2 {
+  color: white;
+  font-size: 18px;
+  margin-bottom: 30px;
+  text-align: left;
+  }
+  
+  .workedwith .company-logos {
+  display: flex;
+  justify-content: center; 
+  gap: 80px; 
+  }
+  
+  .workedwith img {
+  width: 140px;
+  height: auto;
+  filter: grayscale(100%);
+  opacity: 0.9;
+  transition: opacity 0.3s ease, filter 0.3s ease, transform 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 10px;
+  }
+  
+  .workedwith img:hover {
+  opacity: 1;
+  filter: grayscale(0%);
+  transform: scale(1.1);
+  background-color: rgba(255, 255, 255, 0.3);
+  }
+  /* Contact Section */
+  .contact {
+  
+  padding: 60px 0;
+  text-align: center;
+  }
+  
+  .contact h2 {
+  font-size: 2.5em;
+  color: white;
+  margin-bottom: 20px;
+  font-family: 'Raleway', sans-serif;
+  font-size: 34px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  }
+  
+  .contact p {
+  
+  color: #9C9C9C;
+  margin-bottom: 40px;
+  font-family: "IBM Plex Mono";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; 
+  letter-spacing: 0.14px;
+  }
+  
+  .contact-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 600px;
+  margin: 0 auto;
+  }
+  
+  .contact-form label {
+  color: white;
+  font-size: 12px;
+  margin-bottom: 10px;
+  text-align: left;
+  width: 100%;
+  }
+  
+  /* Aplica estilos personalizados a los placeholders */
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+  color: #9C9C9C; 
+  font-size: 12px;  
+  font-family: 'IBM Plex Mono', monospace; 
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+  outline: none;
+  border-color: #62ba1b;
+  }
+  
+  .contact-form textarea {
+  resize: none; /* Evita que se cambie el tamaÃ±o del textarea */
+  }
+  
+  .cta-button {
+  padding: 15px 30px;
+  border-radius: 4px;
+  border: 1px solid #62ba1b;
+  background-color: #3f8e00;
+  box-shadow: 0px 8px 30px rgba(63, 142, 0, 0.5);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  }
+  
+  .cta-button:hover {
+  background-color: #218838;
+  }
+  
+  /* Footer Section */
+  .footer {
+  background-color: #1b1b1b;
+  padding: 20px 0;
+  text-align: center;
+  width: 100vw; 
+  margin-left: calc(50% - 50vw);
+  }
+  
+  .footer p {
+  color: #9C9C9C;
+  font-size: 14px;
+  }
+  
+  .footer p span {
+  color: red;
+  }
